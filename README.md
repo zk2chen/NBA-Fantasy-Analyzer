@@ -1,1 +1,1 @@
-# NBA ML Project
+# NBA Fantasy Analyzer
