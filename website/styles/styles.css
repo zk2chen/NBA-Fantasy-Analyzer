@@ -31,7 +31,7 @@ nav{
 }
 
 
-nav ul{ 
+nav ul{
    margin: 0;
    padding: 0;
    list-style: none;
@@ -49,7 +49,7 @@ nav a{
    text-decoration: none;
    text-transform: uppercase;
    font-size: 14px;
-} 
+}
 
 nav a:hover{
    color: #222;
@@ -60,22 +60,22 @@ nav a::before {
    display: block;
    height: 5px;
    background-color: #444;
- 
+
    position: absolute;
    top: 0;
    width: 0%;
- 
+
    transition: all ease-in-out 250ms;
  }
- 
+
  nav a:hover::before {
    width: 100%;
  }
- 
+
  .dropdown{
     float: left;
     overflow: hidden;
-    
+
  }
 
  .dropdown .dropbtn{
@@ -91,7 +91,7 @@ nav a::before {
 
  .navbar a:hover, .dropdown:hover .dropbtn {
    background-color: #222;
- } 
+ }
 
 .dropdown-content{
    display: none;
@@ -112,7 +112,7 @@ nav a::before {
    display: block;
    text-align: left;
  }
- 
+
 
  .dropdown-content a:hover {
    background-color: #ddd;
@@ -121,9 +121,40 @@ nav a::before {
  .dropdown:hover .dropdown-content {
    display: block;
  }
- .Eastern-confrence{
+ .Eastern-conference{
    float: left;
  }
- .Western-confrence{
+ .Western-conference{
     float: right;
  }
+
+ html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+#container {
+   min-height:100%;
+   position:relative;
+}
+#header {
+   background:#ff0;
+   padding:10px;
+}
+#body {
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+}
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background:#6cf;
+}
+And one simple CSS rule for IE 6 and IE 5.5:
+
+#container {
+   height:100%;
+}
