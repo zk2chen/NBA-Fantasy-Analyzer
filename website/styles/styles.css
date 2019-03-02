@@ -116,11 +116,11 @@ nav a:hover::before {
    display: block;
 }
 
-.Eastern-confrence {
+.Eastern-conference {
    float: left;
 }
 
-.Western-confrence {
+.Western-conference {
    float: right;
 }
 body {
