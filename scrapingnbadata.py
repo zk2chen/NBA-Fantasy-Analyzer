@@ -66,4 +66,4 @@ db = db[['player',
          'TOV']
       ]
 
-db.to_pickle('97-98-nba_stats.pkl')
+db.to_pickle('18-19-nba_stats.pkl')
