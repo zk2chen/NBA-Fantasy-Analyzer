@@ -47,6 +47,7 @@ db = pandas.DataFrame({'player': player_names,
                        }
                      )
 
+# re-order columns so that it is not in alphabetical order
 db = db[['player', 
          'GP', 
          'MIN', 
