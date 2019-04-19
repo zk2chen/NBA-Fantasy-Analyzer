@@ -1,17 +1,15 @@
-# %matplotlib inline
-from selenium import webdriver
-from pandas import *
-import pandas
+# Importing libraries
+import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-from sqlalchemy import *
+from selenium import webdriver
 
-path_to_chromedriver = r'C:\Users\zhika\Miniconda3\pkgs\chromedriver-2.35-0\Library\bin\chromedriver' # Path to access a chrome driver
-browser = webdriver.Chrome(executable_path=path_to_chromedriver)
+# Path to chromedriver
+chromedriver_path = r'C:\Users\zhika\Miniconda3\pkgs\chromedriver-2.35-0\Library\bin\chromedriver'
+browser = webdriver.Chrome(executable_path=chromedriver_path)
 
-url = 'https://stats.nba.com/leaders/?Season=2018-19&SeasonType=Regular%20Season'
-browser.get(url)
+browser.get('https://stats.nba.com/leaders/?Season=2018-19&SeasonType=Regular%20Season')
 
+# Right now table only displays top 50 rows, click option so that it displays all
 browser.find_element_by_xpath('/html/body/main/div[2]/div/div[2]/div/div/nba-stat-table/div[3]/div/div/select/option[1]').click()
 
 table = browser.find_element_by_class_name('nba-stat-table__overflow')
